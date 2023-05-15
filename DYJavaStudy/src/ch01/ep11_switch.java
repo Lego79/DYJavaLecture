@@ -5,9 +5,9 @@ public class ep11_switch {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		int korean = 88;
-		int english = 92;
-		int math = 60;
+		int korean = 80;
+		int english = 40;
+		int math = 30;
 		
 		System.out.println("국어 = " + korean);
 		System.out.println("영어 = " + english);
@@ -18,6 +18,9 @@ public class ep11_switch {
 		
 		int sum = korean + english + math;
 		int avg = sum /3;
+		int score;
+		
+		score = avg/10;
 		
 		System.out.println("합계 = " + sum);
 		System.out.println("평균 = " + avg);
@@ -25,18 +28,40 @@ public class ep11_switch {
 		avg = avg/10;
 		
 		switch(avg) {
-		case 9: System.out.println("A학점입니다");
+		
+		
+		
+		case 10: System.out.println("a등급입니다");
 		break;
-		case 8: System.out.println("B학점입니다");
+		
+		case 9: System.out.println("A등급입니다");
 		break;
-		case 7: System.out.println("C학점입니다");
+		
+		case 8: System.out.println("B등급입니다");
+		break;
+		
+		case 7: System.out.println("C등급입니다");
 		break;	
 		
-//		study;
+		case 6: System.out.println("D등급입니다");
+		break;
 		
+		case 5: System.out.println("Fail 입니다");
+		break;
+
+		
+		if(score>=90) {
+			System.out.println("90~100점");
+			System.out.println("A입니다");
+		} else if(score >= 80) {
+			System.out.println("80~90점");
+			System.out.println("b입니다");
+		} else (score >= 70) {
+			System.out.println("c입니다");
+			
 		}
 		
-		
+		}		
 
 	}
 
