@@ -32,7 +32,7 @@ public class ep11_switch {
 		case 7: System.out.println("C학점입니다");
 		break;	
 		
-		
+//		study;
 		
 		}
 		
