@@ -1,9 +1,7 @@
-package ch06.exam03;
+package galaxy23ultraMethod;
 
-public class FootballPlayerMethod {
-
-
-
+public class MobilePhone {
+	
 	private String name;
 	private String uniformNumber;
 	private String teamName;
@@ -11,7 +9,7 @@ public class FootballPlayerMethod {
 	private int tech;
 	
 
-	public FootballPlayerMethod(String name, String uniformNumber, String teamName, int speed, int tech) {
+	public MobilePhone(String name, String uniformNumber, String teamName, int speed, int tech) {
 	
 		this.name = name;
 		this.uniformNumber = uniformNumber;
@@ -20,7 +18,7 @@ public class FootballPlayerMethod {
 		this.tech = tech;
 	}
 	
-	public FootballPlayerMethod() {
+	public MobilePhone() {
 		this.name = "unknown";
 		this.uniformNumber = "unknown";
 		this.teamName = "unknown";
@@ -81,5 +79,9 @@ public class FootballPlayerMethod {
 		System.out.println("스피드=" + getSpeed());
 		System.out.println("기술=" + getTech());
 	}
+	
+
+	
+
 
 }

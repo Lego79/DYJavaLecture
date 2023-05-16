@@ -14,13 +14,21 @@ public class FootballApp {
 		fp1.setTech(5);
 		fp1.printInfo();	
 		
+				
 		FootballPlayerMethod fp2 = new FootballPlayerMethod();
 		fp2.setName("lee");
 		fp2.setUniformNumber("19");
 		fp2.setTeamName("Barcelona");
-		fp2.setSpeed(4);
+		fp2.setSpeed(1);
 		fp2.setTech(3);
 		fp2.printInfo();;	
+		
+		if(fp2.getSpeed() > 3) {
+			
+			System.out.println("fp2 = speed player");
+		} else {
+			System.out.println("거북이");
+		}
 		
 		
 		
