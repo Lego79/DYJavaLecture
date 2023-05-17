@@ -9,6 +9,38 @@ public class Kart {
 	
 	
 	
+	public String getName() {
+		return name;
+	}
+
+	public String getColor() {
+		return color;
+	}
+
+	public int getBooster() {
+		return booster;
+	}
+
+	public int getSpeed() {
+		return speed;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public void setColor(String color) {
+		this.color = color;
+	}
+
+	public void setBooster(int booster) {
+		this.booster = booster;
+	}
+
+	public void setSpeed(int speed) {
+		this.speed = speed;
+	}
+
 	public Kart(String name, String color, int booster, int speed) {
 		this.name = name;
 		this.color = color;
@@ -33,57 +65,56 @@ public class Kart {
 	
 	public void speedUp() {
 		
-		speed += 40;
-		if(speed >= 150) 
+		speed = getSpeed() + 40;
+		if(speed >= 150)
 			speed = 150;
-				
-		System.out.println("속도 :" + speed +  "부스터 : 0(개)");
-				
-	}
-	
-	public void pickupBosster() {
-		
-		booster += 1;
-		
-		if(booster == 1) {
-			
-			System.out.println("속도 :" + speed + "부스터 : " + booster + "(개)");
-		} else {
-			
-				booster = 1;
-			System.out.println("속도 :" + speed + "부스터 : " + booster + "(개)" + " : 부스터를 더 이상 추가할 수 없습니다.");
-		}
-		
-		
-		
-		
-
+		System.out.println("[" + name + "(" + color + ")]" + "speedUP : speed : " + speed + "(km) " + "부스터 :" + getBooster() + "(개)");
 		
 	}
 	
-	public void useBooster() {
+	public void pickupBooster () {
 		
 		
-		if(booster == 1) {
-			speed += 100;
-			if(speed >= 150) 
-				speed = 150;
-			booster = 0;
-			System.out.println("속도 :" + speed + "부스터 : " + booster + "(개)");
-		} else {
-			System.out.println("속도 :" + speed + "부스터 : " + booster + "(개)" + ": 사용가능한 부스터가 없습니다");
-		}
-			
-		
-		
-		
-		
-		
-	}
-	
-	public void speedDown() {
+		if(booster == 1) {}
 		
 	}
 	
 	
+		
+		
 }
+	
+	
+	
+
+
+//public void useBooster() {
+//
+//
+//
+//    if (booster == 1) {
+//        speed += 100;
+//        if(speed >= 150)
+//            speed = 150;
+//            booster = 0;
+//        System.out.println("[" + name + "(" + color + ")]" + "useBooster : speed : " + speed + "(km)" + ":" + "booster :" +  booster + ":(piece)");
+//    } else {
+//        System.out.println("[" + name + "(" + color + ")]" + "useBooster : speed : " + speed + "(km)" + ":" + "booster :" + booster + ":(piece)" + "No Booster");
+//    }
+//}
+//
+//public void speedDown() {
+//
+//    speed -= 80;
+//    if(speed < 0) {
+//        speed = 0;
+//        booster = 0;
+//        System.out.println("[" + name + "(" + color + ")]" + "speedDown : speed : " + speed + "(km)" + ":" + "booster :" + booster + ":(piece)");
+//    } else {
+//        System.out.println("[" + name + "(" + color + ")]" + "speedDown : speed : " + speed + "(km)" + ":" + "booster :" + booster + ":(piece)");
+//    }
+//}
+//
+//}
+//
+//

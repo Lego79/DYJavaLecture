@@ -4,7 +4,7 @@ public class KartApp {
 
 	public static void main(String[] args) {
 		
-		Kart kart = new Kart("버스트", "Green");
+		Kart kart = new Kart("버스트", "Green", 1, 10);
 		
 		System.out.println("=====ready=====");
 		kart.printInfo();
@@ -13,12 +13,12 @@ public class KartApp {
 		
 		kart.speedUp();
 		kart.speedUp();
-		kart.pickupBosster();
-		kart.pickupBosster();
-		kart.useBooster();
-		kart.useBooster();
-		kart.speedDown();
-		kart.speedDown();
+//		kart.pickupBooster();
+//		kart.pickupBooster();
+//		kart.useBooster();
+//		kart.useBooster();
+//		kart.speedDown();
+//		kart.speedDown();
 
 	}
 
