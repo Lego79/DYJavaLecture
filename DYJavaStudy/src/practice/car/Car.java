@@ -88,7 +88,7 @@ public class Car {
 		System.out.println("최대속력 = " + getMaxSpeed());
 		
 		System.out.println("\n----- company Info -----");		
-		company.printInfo();
+		getCompany().printInfo();
 		
 		
 		
