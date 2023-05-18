@@ -22,6 +22,7 @@ public class SongApp {
 		
 		Song song = new Song(title, album, composer, lyricist, releaseDate, singer);
 		song.printInfo();
+		
 	}
 
 }

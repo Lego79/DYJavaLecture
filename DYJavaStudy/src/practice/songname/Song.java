@@ -76,6 +76,7 @@ public class Song {
 		System.out.println("작사=" + getLyricist());
 		System.out.println("발매일=" + getReleaseDate());
 		System.out.println("\n---- Singer Info ----");
+		
 		getSinger().printInfo();
 		
 		

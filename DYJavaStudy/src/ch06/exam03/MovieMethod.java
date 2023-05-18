@@ -12,7 +12,7 @@ public class MovieMethod {
 
 	
 	public MovieMethod() {
-		super();
+		
 		this.title = title;
 		this.category = category;
 		this.director = director;
