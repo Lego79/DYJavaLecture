@@ -10,6 +10,8 @@ import cp27_bookStroeArray.service.ShirtService;
 
 import cp27_bookStroeArray.service.BookService;
 
+import cp27_bookStroeArray.entity;
+
 public class CartApp {
 
 	public static void main(String[] args) {
@@ -63,11 +65,11 @@ public class CartApp {
 //		System.out.println("\n ==== printCartInfo() ====");
 //		c.printCartInfo();
 		
-		System.out.println("\n ==== printGiftYn ====");
-		c.printGiftYn();
+//		System.out.println("\n ==== printGiftYn ====");
+//		c.printGiftYn();
 		
 		System.out.println("\n ==== Buy() ====");
-		boolean pointUseYn = false;
+		boolean pointUseYn = true;
 		c.buy(pointUseYn);
 
 	}
