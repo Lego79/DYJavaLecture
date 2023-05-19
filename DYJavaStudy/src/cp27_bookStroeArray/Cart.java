@@ -266,6 +266,7 @@ public class Cart {
 
 		if(pointUseYn == true) {
 			
+			
 			int expense = 0;
 			switch(member.getGrade()) {
 			
@@ -293,6 +294,7 @@ public class Cart {
 			System.out.println("결제금액 : " + expense);	
 			System.out.println("\n---- point ----");
 			System.out.println("현재 포인트 : " + df.format(member.getPoint()));
+			System.out.println("누적 포인트 : " + df.format(member.getPoint());
 			
 			
 			
