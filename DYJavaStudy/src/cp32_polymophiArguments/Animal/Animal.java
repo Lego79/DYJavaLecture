@@ -1,0 +1,9 @@
+package cp32_polymophiArguments.Animal;
+
+public class Animal {
+
+	public void cry() {
+		System.out.println("Animal.cry()");
+	}
+
+}
