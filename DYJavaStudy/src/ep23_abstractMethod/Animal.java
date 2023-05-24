@@ -6,7 +6,7 @@ public abstract class Animal {
 		System.out.println("숨을 쉰다.");
 	}
 	
-	public abstract void 
-();
+
+
 
 }

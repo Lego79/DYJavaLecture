@@ -20,7 +20,7 @@ public class AnimalAbstractApp {
 	}
 	
 	public static void animalSound(Animal animal) {
-		animal.sound();
+		
 	}
 	
 

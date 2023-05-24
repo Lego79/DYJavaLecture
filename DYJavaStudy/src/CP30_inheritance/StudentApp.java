@@ -17,7 +17,7 @@ public class StudentApp  {
 		System.out.println("\n==== private ====");
 		// private는 상속되지 않는다
 		
-		System.out.println("이름" + s.name); // 에러 - 퍼슨 클레스에 있는 private name 필드이기 때문에 직접 접근이 불가능하다
+//		System.out.println("이름" + s.name); // 에러 - 퍼슨 클레스에 있는 private name 필드이기 때문에 직접 접근이 불가능하다
 		
 		
 

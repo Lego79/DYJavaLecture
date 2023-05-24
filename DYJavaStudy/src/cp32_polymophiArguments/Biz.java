@@ -22,7 +22,7 @@ public class Biz {
 			System.out.println("----- person instanceof Teacher -----");
 			System.out.println("이름 : " + person.getName());
 			System.out.println("나이 : " + person.getAge());
-			System.out.println("과목 : " + person.get());
+//			System.out.println("과목 : " + person.get());
 			
 		} else if (person instanceof Student) {
 			System.out.println("Student");
