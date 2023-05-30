@@ -20,6 +20,55 @@ public class GenericExample {
 		String carModel = product2.getModel();
 		
 		System.out.println(product2.getModel());
+		
+		
+		//제네릭
+		
+		//제네릭 타입으로 선언한 클래스가 있다
+		
+		// product에는 두가지 제네릭 타입 파라미터를 지정햇다
+		
+		// 첫번째에 클래스든, 스트링이든, 인티져든 뭐든 올 수 있다
+		
+		//
+		
+		Product<Tv, String> smartTv = new Product<>();
+		smartTv.setKind(new Tv());
+		smartTv.setModel("삼성스마트티비");
+		
+		Product<String, Tv> smartTv1 = new Product<>();
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 
 	}
 
