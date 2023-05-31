@@ -23,13 +23,13 @@ public class Biz {
 			String isbn = data[5];
 			Book book = new Book(category, title, author, publisher, price, isbn);
 			bookList.add(book);
-			
+		} 		
+		return bookList;		
+	}
 	
-			
-			
-		} 
+	public void bookPrintInfo() {
 		
-		return bookList;
+		
 		
 	}
 

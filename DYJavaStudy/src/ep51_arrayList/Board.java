@@ -1,10 +1,14 @@
 package ep51_arrayList;
 
-public class Board {
+import java.io.Serializable;
+import java.util.UUID;
+
+public class Board implements Serializable{
 	
 	private String subject;
 	private String content;
 	private String writer;
+	private UUID write;
 	
 	
 	public Board(String subject, String content, String writer) {
