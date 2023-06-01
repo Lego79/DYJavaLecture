@@ -74,6 +74,7 @@ public class Book {
 	
 	DecimalFormat df = new DecimalFormat("#,###");
 
+
 	public void printInfo() {
 
 		System.out.println("분야=" + getCategory());
