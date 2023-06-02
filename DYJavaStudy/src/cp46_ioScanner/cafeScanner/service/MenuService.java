@@ -66,29 +66,7 @@ public class MenuService {
 		    }
 		}
   
-//	public void printMenu() {
-//	    try (Reader reader = new FileReader(MENU_FILE_PATH);
-//	         Scanner sc = new Scanner(reader)) {
-//	        while (sc.hasNextLine()) {
-//	            String line = sc.nextLine();
-//	            String[] menuInfo = line.split(",");
-//
-//	            if (menuInfo.length == 4) {
-//	                int id = Integer.parseInt(menuInfo[0]);
-//	                String category = menuInfo[1];
-//	                String name = menuInfo[2];
-//	                int price = Integer.parseInt(menuInfo[3]);
-//
-//	                String formattedPrice = df.format(price);
-//
-//	                String menuLine = id + ". " + category + " : " + name + " " + formattedPrice + "(원)";
-//	                System.out.println(menuLine);
-//	            }
-//	        }
-//	    } catch (IOException e) {
-//	        System.out.println("메뉴를 읽어오는 도중 오류가 발생했습니다: " + e.getMessage());
-//	    } 
-//	}
+
 	
   public void addMenu() {
       Scanner sc = new Scanner(System.in);

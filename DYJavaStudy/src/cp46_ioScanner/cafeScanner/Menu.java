@@ -13,15 +13,10 @@ public class Menu {
 	private int id;
 	private String category;
 	private String name;
-	private int price;
-	
-
-		
+	private int price;		
 		public Menu() {
 
 		}
-		
-		
 	
 	
 	

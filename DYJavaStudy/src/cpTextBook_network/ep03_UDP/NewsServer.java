@@ -1,0 +1,92 @@
+package cpTextBook_network.ep03_UDP;
+
+import java.io.DataInputStream;
+import java.io.DataOutputStream;
+import java.io.IOException;
+import java.net.DatagramPacket;
+import java.net.DatagramSocket;
+import java.net.InetSocketAddress;
+import java.net.ServerSocket;
+import java.net.Socket;
+import java.net.SocketAddress;
+import java.util.Scanner;
+
+public class NewsServer {
+
+	private static DatagramSocket datagramSocket = null;
+
+	public static void main(String[] args) {
+
+		System.out.println("--------------------------------------------");
+		System.out.println("서버를 종료하려면 q 또는 Q를 입력하고 Enter키를 입력하세요");
+		System.out.println("--------------------------------------------");
+
+		// UDP 서버시작
+		startServer();
+
+		Scanner scanner = new Scanner(System.in);
+		while (true) {
+			String key = scanner.nextLine();
+			if (key.toLowerCase().equals("q")) {
+				break;
+			}
+		}
+		scanner.close();
+
+		stopServer();
+	}
+
+	public static void startServer() {
+		Thread thread = new Thread() {
+
+			@Override
+			public void run() {
+				try {
+					// 데이타그램소켓 생성 및 포트 바인딩
+					datagramSocket = new DatagramSocket(50001);
+					System.out.println("[서버] 시작됨");
+
+					while (true) {
+						System.out.println("\n[서버] 연결 요청을 기다림 \n");
+
+						DatagramPacket receivePacket = new DatagramPacket(new byte[1024], 1024);
+						datagramSocket.receive(receivePacket);
+
+						String newsKind = new String(receivePacket.getData(), 0, receivePacket.getLength(), "UTF-8");
+
+						// 클라이언트의 ip port얻기
+						SocketAddress socketAddress = receivePacket.getSocketAddress();
+
+						// -------------------------------------------------//
+
+						// --------------------------------------------------//
+
+						// 10개의 뉴스를 클라이언트로 전송
+						for (int i = 1; i <= 10; i++) {
+							String data = newsKind + ": 뉴스" + i;
+							byte[] bytes = data.getBytes("UTF-8");
+							DatagramPacket sendPacket = new DatagramPacket(bytes, 0, bytes.length, socketAddress);
+							datagramSocket.send(sendPacket);
+
+						}
+
+					}
+
+				} catch (IOException e) {
+					System.out.println("[서버]" + e.getMessage());
+				}
+
+			}
+
+		};
+		thread.start();
+	}
+
+	public static void stopServer() {
+
+		datagramSocket.close();
+		System.out.println("[서버] 종료됨 ");
+
+	}
+
+}
