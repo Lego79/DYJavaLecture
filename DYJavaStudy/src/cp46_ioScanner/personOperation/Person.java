@@ -1,5 +1,9 @@
 package cp46_ioScanner.personOperation;
+import org.json.JSONObject;
 
+import lombok.Data;
+
+@Data
 public class Person {
 	
 	private String name;// 이름
